@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 独占一行,默认宽度撑满父级,加宽高生效 */
+        div{
+           width: 100px;
+           height: 100px; 
+        }
+        .d1{
+            background-color:orange;
+        }
+        .d2{
+            background-color: yellow;
+        }
+
+        一行共存多个,尺寸由内容撑开,设置宽高无效
+        span{
+            width: 200px;
+            height: 200px;
+        }
+        .s1{
+            background: orange;
+        }
+        .span2{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="d1">我是div</div>
+    <div class="d2">我是div</div>
+
+    <span class="s1">我是span</span>
+    <span class="span2">我是span</span>
+</body>
+</html>

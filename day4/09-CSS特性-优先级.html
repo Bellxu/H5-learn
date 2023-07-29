@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS特性-优先级</title>
+    <!-- 通配符 标签 类 id 行内样式 !important -->
+    <style>
+        *{
+            color: red !important;
+        }
+        div{
+            color: orange;
+        }
+        .c{
+            color: yellow;
+        }
+        #i{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="c" id="i" style="color: greenyellow;">我是div</div>
+    
+</body>
+</html>

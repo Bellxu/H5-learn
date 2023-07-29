@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后代选择器</title>
+    <style>
+        /* 只要是后代都会生效,包括儿子,孙子,重孙子 */
+        div span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <span>这是单独的span</span>
+    <div>
+        <span>div 里套的span</span>
+        <p>
+            <span>2层p里的span</span>
+        </p>
+    </div>
+    
+</body>
+</html>
